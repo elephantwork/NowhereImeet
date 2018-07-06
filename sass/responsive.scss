@@ -1,0 +1,253 @@
+/* ===================================================================
+ *  17. Media Queries - (responsive)
+ * ------------------------------------------------------------------- */
+ @media screen and (-webkit-min-device-pixel-ratio:0) {
+ /* Safari and Chrome rules here */
+ }
+
+/* desktop */
+@media (max-width: 1920px) {
+}
+
+@media (max-width: 1680px) {
+}
+
+@media (max-width: 1440px) {
+    .work-list img {height: 64vh}
+}
+
+@media (max-width: 1366px) {
+    .artist-info .scrollbar-inner {
+	    max-height: 550px;
+    }
+    .blueline .scrollbar-inner {
+    	max-height: 375px;
+    }
+    .work-list img {height: 72vh}
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .scrollbar-inner {max-height: 280px}
+    .work-list img {height: auto;width: 90%}
+    #footer {position: relative;}
+}
+
+/* ----------- iPad mini ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+    /* display none in mobile */
+    .workMenu, .sidemenuMenu, .scroolto, #artists .KeyVision, .desktop {display: none;height: auto}
+    .fp-section.fp-table, .fp-slide.fp-table, .mobile {display: block!important}
+
+    .grid-full [class*="grid"] {float: none;width: 100%}
+
+    .wrok-info {position: relative}
+    .wrok-info .scrollbar-inner {max-height: inherit}
+    .artist-info .scrollbar-inner, .blueline .scrollbar-inner {max-height: inherit;padding: 0 .5em}
+    #info .KeyVision {left: 90%;z-index: -1}
+    #info .mainTitle {
+        position: relative;height: auto;width: auto;
+        img {position: relative;margin: 0;left: 0;width: 100%}
+    }
+
+    /* footer */
+    #footer {position: relative;padding-bottom: 2em;margin-top: 2em;bottom: 0}
+    .footer-nav {
+        a {font-size: .75em}
+        &:before {width: 15px;height: 15px}
+    }
+
+    .fp-bg:before, .fp-tableCell, .artist-info, .videocontainer, .wrok-info, #index .section .side-content {height: 100%!important}
+    #fullpage > .section {overflow: auto;height: auto!important}
+
+    #info .main-content, .artist-info .article {margin: 0}
+
+    /* index */
+    #index .KeyVision {left: 0;position: absolute}
+    #index .section .mainTitle img {width: 70%;right: 2.5%}
+    #index .section .topTitle {width: 240px;right: 3%;margin-top: 24px;left: inherit}
+    .artists_1, .artists_2, .artists_3 {padding: 0}
+    .tilter {margin: 5em auto -3em}
+    .tilter, .tilter.artists_2 {width: 85%;}
+    .tilter.artists_3 {margin-bottom: 10em}
+    .artists_1 .tilter__caption, .artists_2 .tilter__caption, .artists_3 .tilter__caption {left: -10%;text-align: left;top: 90%;font-size: .8em}
+    .tilter__description {margin-bottom: .5em}
+
+    /* article */
+    .fullpage-wrapper .section:first-child .artist-info .article {padding-top: 2em}
+    .postcont.blueline {background: rgba(0, 0, 0, 0.15);}
+    .blueline .article .bluebg {padding: 0;margin: -2.5em 0 0;}
+    .blueline .article:after {width: 100%;left: -2.5%}
+    .fp-bg .intro h1 {font-size: 1.75em;letter-spacing: 0}
+    .fp-bg .intro h1 small:after {width: 50px;}
+    .postcont .author+h2 {
+        margin-top: .75em;
+        small {display: block;margin-top: -10px}
+    }
+    .author {width: 100px;height:100px;margin: 0}
+    .work-list .img-item {padding: 5vh 0 0;height: auto!important}
+    .work-list img {height: auto;width: 90%!important}
+
+    /* header */
+    #header {bottom: inherit;top: 1em;}
+    .menu-open:checked ~ .menu-item:nth-child(3) {
+        transition-duration: 80ms;
+       transform: translate3d(0px, 48px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(4) {
+        transition-duration: 180ms;
+       transform: translate3d(0px, 100px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(5) {
+        transition-duration: 280ms;
+       transform: translate3d(0px, 152px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(6) {
+        transition-duration: 380ms;
+       transform: translate3d(0px, 204px, 0);
+        ul {display: none;}
+    }
+    .menu-open:checked ~ .menu-item:nth-child(7) {
+        transition-duration: 480ms;
+        display: block;
+       transform: translate3d(24px, 256px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(8) {
+        transition-duration: 480ms;
+        display: block;
+       transform: translate3d(24px, 308px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(9) {
+        transition-duration: 480ms;
+        display: block;
+        transform: translate3d(24px, 360px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(10) {
+        transition-duration: 580ms;
+        transform: translate3d(0px, 412px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(11) {
+        transition-duration: 680ms;
+        transform: translate3d(0px, 464px, 0);
+    }
+    .menu-open:checked ~ .menu-item:nth-child(12) {
+        transition-duration: 780ms;
+        transform: translate3d(0px, 515px, 0);
+    }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+@media screen and (max-width: 568px) {}
+@media screen and (max-width: 480px) {}
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6 ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+}
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+}

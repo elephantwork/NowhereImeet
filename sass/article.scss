@@ -1,0 +1,319 @@
+/* ===================================================================
+ *  13. artilce
+ * ------------------------------------------------------------------- */
+.headbanner h1 {
+	background-color: #FFD700;
+	display: inline-block;
+	font-size: 260%;
+	line-height: 110%;
+	padding: 8px 10px;
+	position: absolute;
+	top: 210px;
+	left: -20px;
+}
+.headbanner h1 span {
+	display: block;
+	font-size: 60%;
+	font-weight: lighter;
+	line-height: 130%;
+}
+
+/* article content */
+.postcont {
+	clear: both;
+	.articleHeader {
+		background: #212121;
+		color: #FFF;
+		font-size: 1em;
+		margin: 2em 0 2.5em;
+		font-weight: bold;
+		width: 6em;
+		text-align: left;
+		padding: 5em 1.2em .5em;
+	&.margin-top-24 {
+		margin-top: 5em;
+		}
+	}
+	h3 {
+//		font-size: 1em;
+		margin-bottom: 1em;
+		.tabspace {
+			display: block;
+			margin-left: 4em
+		}
+	}
+}
+
+.postcont p, .postcont ol, .postcont ul {
+	font-size: 1em;
+	line-height: 1.75em;
+	margin: 2em auto;
+	text-align: justify;
+	text-justify: distribute;
+}
+
+.English {
+	color: #686868;
+}
+
+/* author */
+.author {
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+	margin: 5% 15% 0 0;
+	overflow: hidden;
+	float: right;
+    text-align: center;
+	img {
+		height: 100%;
+		max-width: inherit;
+		min-width: inherit;
+	}
+}
+
+#info .author {
+    margin: 0;
+    position: relative;
+    top: -12px
+}
+
+#CHEN .author img {
+    margin: 0 -20%;
+}
+
+.info_all {
+    margin-bottom: 24px;
+    color:#555;
+	overflow: hidden;
+}
+
+.videocontainer {
+	position: relative;
+	height: 100vh;
+	text-align: center;
+	z-index: 1;
+}
+
+.videocontainer .video {
+	width: 85%!important;
+	margin: 10vh auto;
+	text-align: center;
+}
+
+// @@import "video-js.scss";
+
+.gallery {
+	display: -ms-grid;
+	-ms-grid-columns: min-content;
+	overflow: hidden;
+	margin-bottom: -20px;
+}
+
+.story {
+	margin: 0 auto;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	color: #E0E0E0;
+	text-align: center;
+	overflow: hidden;
+	z-index: 1;
+	h2 {
+		font-size: 1.5em;
+	}
+	h4 {
+		margin: 1.5em auto 2em;
+	}
+	p {
+		font-size: .9em;
+		line-height: 1.75em;
+		text-align: justify;
+		&.English {
+			color: #E0E0E0
+		}
+	}
+	hr {
+		margin: 3em auto;
+	}
+	.article {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.write {
+		letter-spacing: 10px;
+		margin: 1em auto 3em;
+	}
+	.scrollbar-inner {
+		max-height: 52vh;
+		.scroll-element.scroll-y {
+			top: 0
+		}
+	}
+}
+
+/* list */
+.postcont li {
+    font-size: .9em;
+    margin: .5em 0;
+	line-height: 1.25em;
+}
+.partner {
+	font-size: .875em;
+	strong {
+		display: inline-block;
+		width: 80px;
+	&.two {
+		float: left;
+		margin: 0 .225em 1em 0;
+		}
+	}
+	.space {
+		margin: .5em auto;
+		height: 16px;
+	}
+}
+.partner.English strong {
+    width: 125px;
+}
+
+/* inside scroll */
+.artist-info .scrollbar-inner {
+	max-height: 520px;
+}
+.blueline .scrollbar-inner {
+	max-height: 450px;
+}
+.scroll-wrapper {
+    overflow: hidden !important;
+    position: relative;
+	padding: 0 30px;
+}
+
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-element {
+    display: none;
+}
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+    cursor: default;
+}
+
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+.scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+.scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+
+.scrollbar-inner > .scroll-element,
+.scrollbar-inner > .scroll-element div {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.scrollbar-inner > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scrollbar-inner > .scroll-element.scroll-x {
+    bottom: 2px;
+    height: 8px;
+    left: 0;
+    width: 100%;
+}
+
+.scrollbar-inner > .scroll-element.scroll-y {
+    height: 100%;
+    right: 0px;
+    top: 15px;
+    width: 8px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer {
+    overflow: hidden;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer,
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
+.scrollbar-inner > .scroll-element .scroll-bar { background-color: #c2c2c2; }
+.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #919191; }
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+
+/* update scrollbar offset if both scrolls are visible */
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
